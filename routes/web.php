@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('orderdata');
 });
+
+Route::get('/order','orderController@Orders');
+Route::get('/order/status','orderController@Order_status');
